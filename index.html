@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accounting Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Aktifo-A', 'Aktifo A', 'Inter', 'sans-serif'],
+            },
+            fontSize: {
+              xs: ['11px', '14px'],
+              sm: ['12px', '16px'],
+              base: ['13px', '20px'],
+              lg: ['14px', '22px'],
+              xl: ['16px', '24px'],
+              '2xl': ['18px', '26px'],
+              '3xl': ['22px', '30px'],
+            },
+            colors: {
+              kletta: {
+                dark: '#002b31',
+                yellow: '#fcd34d',
+                yellowHover: '#fbbf24',
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Aktifo-A', 'Aktifo A', 'Inter', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      /* Simulated font-face definition for Aktifo-A */
+      @font-face {
+        font-family: 'Aktifo-A';
+        src: local('Aktifo-A'), local('Aktifo A');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Aktifo-A';
+        src: local('Aktifo-A Bold'), local('Aktifo A Bold');
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      /* Custom scrollbar to match enterprise apps */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+      }
+
+      /* Hide number input spinners (arrows) */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@phosphor-icons/react": "https://esm.sh/@phosphor-icons/react@2.1.0?external=react,react-dom",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
